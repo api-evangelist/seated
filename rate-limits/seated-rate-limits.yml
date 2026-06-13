@@ -1,0 +1,65 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+provider: Seated
+providerId: seated
+created: '2026-06-13'
+modified: '2026-06-13'
+
+throttledStatusCode: 429
+throttledMessage: "Rate limit exceeded."
+
+limits:
+
+  - scope: application
+    api: Artist API
+    metric: requests
+    methods:
+      - GET
+      - POST
+    limit: not_published
+    timeFrame: not_published
+    notes: >
+      Seated does not publicly document specific numeric rate limits for its
+      API at api.seatedapp.io. The platform is primarily designed for artist
+      and management team use, and access patterns are expected to reflect
+      event and tour date management workflows rather than high-volume
+      data retrieval. Excessive or automated scraping activity is prohibited
+      under Seated's Terms of Service, which forbids use of engines, software,
+      tools, agents, or devices for automated access beyond standard use.
+
+  - scope: notification
+    api: Fan Notifications
+    metric: sms_messages
+    methods:
+      - POST
+    limit: 10
+    timeFrame: monthly
+    notes: >
+      Seated's Terms of Service indicate that text message alerts to fans
+      are capped at up to 10 messages per month per fan subscription.
+
+authentication:
+  type: bearer_token
+  location: header
+  headerName: Authorization
+  format: "Bearer {token}"
+  additionalHeaders:
+    - name: Host
+      value: api.seatedapp.io
+    - name: Content-Type
+      value: application/json
+    - name: Flavor
+      value: native_app_v1
+    - name: Platform
+      value: ios
+  notes: >
+    API access uses Bearer token authentication passed via the Authorization
+    header. Tokens are associated with artist accounts on the Seated platform.
+    Account creation at www.seated.com/artists is required to obtain credentials.
+
+enterpriseNote: >
+  Custom rate limits and access terms for enterprise or partnership integrations
+  are negotiated directly with the Seated team. Contact Seated via
+  support.seated.com for partnership inquiries.
+
+source: https://support.seated.com/hc/en-us/articles/115006017267-Terms-Conditions

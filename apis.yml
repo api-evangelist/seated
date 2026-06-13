@@ -1,0 +1,103 @@
+aid: seated
+name: Seated
+description: >
+  Seated is a live event discovery and direct ticketing platform that connects fans
+  with artists through a frictionless ticketing experience. The platform enables artists
+  to publish tour dates via a single embed line or a custom API integration, manage
+  fan presales and waitlists, capture and sync fan data with marketing tools, and
+  generate additional revenue through merchandise and digital content bundled into
+  the ticket purchase flow. Fans can follow favorite artists to receive text or
+  notification alerts for nearby shows, purchase tickets via mobile without downloading
+  an app, and access live event information for music and entertainment. Seated serves
+  independent artists and major touring acts including Noah Kahan, Shawn Mendes,
+  Brandi Carlile, Post Malone, and Billie Eilish, operating as an independent
+  founder-led company focused on direct artist-to-fan ticketing.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - live events
+  - concerts
+  - ticketing
+  - artists
+  - venues
+  - tour dates
+  - fan notifications
+  - presales
+  - music
+  - entertainment
+url: https://raw.githubusercontent.com/api-evangelist/seated/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+
+apis:
+
+  - aid: seated:artist-api
+    name: Seated Artist API
+    description: >
+      The Seated Artist API enables developers and artist teams to build custom
+      integrations with the Seated platform. The API provides access to tour date
+      listings and event data, supporting use cases such as embedding event listings
+      on artist websites, syncing fan notifications, and connecting with third-party
+      marketing platforms. Authentication is handled via a Bearer token issued to
+      artist accounts through the Seated platform. The API base URL is api.seatedapp.io
+      and responses are returned as JSON. Artists without custom integration needs can
+      use the single-line JavaScript embed to publish tour dates on their websites.
+      The API also supports fan data capture, presale management, and integration with
+      the Seated integrations marketplace launched in 2024 for connecting fan data to
+      marketing tools.
+    humanURL: https://www.seated.com/artists
+    baseURL: https://api.seatedapp.io
+    tags:
+      - artists
+      - tour dates
+      - events
+      - tickets
+      - fan data
+      - presales
+      - REST
+    properties:
+      - type: Documentation
+        url: https://support.seated.com
+      - type: Authentication
+        url: https://www.seated.com/artists
+      - type: TermsOfService
+        url: https://support.seated.com/hc/en-us/articles/115006017267-Terms-Conditions
+      - type: PrivacyPolicy
+        url: https://support.seated.com/hc/en-us/articles/115006196728-Privacy-Policy
+
+common:
+
+  - type: Website
+    url: https://www.seated.com/
+
+  - type: Documentation
+    url: https://support.seated.com
+
+  - type: GettingStarted
+    url: https://www.seated.com/artists
+
+  - type: TermsOfService
+    url: https://support.seated.com/hc/en-us/articles/115006017267-Terms-Conditions
+
+  - type: PrivacyPolicy
+    url: https://support.seated.com/hc/en-us/articles/115006196728-Privacy-Policy
+
+  - type: Blog
+    url: https://blog.seated.com
+
+  - type: FanPortal
+    url: https://go.seated.com
+
+  - type: Plans
+    url: plans/seated-plans-pricing.yml
+
+  - type: RateLimits
+    url: rate-limits/seated-rate-limits.yml
+
+  - type: FinOps
+    url: finops/seated-finops.yml
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

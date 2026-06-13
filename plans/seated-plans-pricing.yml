@@ -1,0 +1,85 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+provider: Seated
+providerId: seated
+created: '2026-06-13'
+modified: '2026-06-13'
+reconciled: true
+type: free-with-account
+
+plans:
+
+  - name: Artist Account (Free Embed)
+    description: >
+      Free access to Seated's core platform features for artists and their
+      management teams. Includes a single-line JavaScript embed to publish
+      tour dates on artist websites, fan follow and notification management,
+      and basic fan engagement tools. No API key required for the embed option.
+      Artist accounts are created through www.seated.com/artists.
+    type: free
+    cost: 0
+    currency: USD
+    billingPeriod: none
+    quotas:
+      - metric: embed_integrations
+        limit: 1
+        type: per_artist
+        notes: Single embed script per artist website integration
+    features:
+      - Tour date listing embed (one line of code)
+      - Fan follow and notification alerts (SMS/push)
+      - Event listing management
+      - Fan data capture
+      - Presale and waitlist management
+      - Merchandise and digital content bundling in ticket flow
+
+  - name: Artist API Access
+    description: >
+      Custom API integration access for artists or developer teams who need
+      programmatic control beyond the embed widget. Requires a Bearer token
+      obtained through an artist account on the Seated platform. The API
+      provides access to tour date listings, fan data, and event management
+      endpoints at api.seatedapp.io. Integrations marketplace access enables
+      connecting fan data with external marketing tools.
+    type: free
+    cost: 0
+    currency: USD
+    billingPeriod: none
+    quotas:
+      - metric: api_requests
+        limit: not_published
+        type: fair_use
+        notes: Rate limits are not publicly documented
+    features:
+      - Programmatic tour date and event data access
+      - Fan notification management via API
+      - Integrations marketplace connectivity (CRM, email, marketing tools)
+      - Fan data export and sync
+      - Presale and waitlist API controls
+
+  - name: Enterprise / Custom Partnership
+    description: >
+      For platforms, venues, or larger operators requiring broader data access
+      or white-label ticketing capabilities beyond the standard artist account.
+      Terms, scope, and pricing are negotiated directly with the Seated team.
+      Contact Seated via support.seated.com for partnership inquiries.
+    type: enterprise
+    cost: custom
+    currency: USD
+    billingPeriod: custom
+    quotas:
+      - metric: api_requests
+        limit: custom
+        type: negotiated
+    features:
+      - Custom data access scope
+      - White-label or embedded ticketing options
+      - Dedicated support and onboarding
+      - Custom integration terms and SLAs
+
+notes: >
+  Seated does not publish a formal tiered pricing page for API access.
+  The platform is primarily free for artists with accounts created at
+  www.seated.com/artists. Custom or enterprise integrations require
+  direct engagement with the Seated team. Pricing information sourced
+  from public website and documentation as of 2026-06-13.

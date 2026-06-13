@@ -1,0 +1,90 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+provider: Seated
+providerId: seated
+created: '2026-06-13'
+modified: '2026-06-13'
+
+billingModel: free-with-service-charge
+description: >
+  Seated's platform is free for artists to access and use for publishing tour dates,
+  managing fan data, and running presales. There is no published per-request or
+  subscription charge for API access. The primary revenue model is a service charge
+  applied on top of ticket prices when fans purchase tickets through the Seated
+  platform. Artist accounts, API credentials, and embed integrations are provided
+  without cost. Enterprise or partnership integrations requiring custom data access
+  scope are negotiated directly and may include custom commercial terms.
+
+focusColumns:
+  - ChargeCategory: Service
+  - BillingCurrency: USD
+  - BillingPeriod: per_transaction
+  - ServiceName: Seated Ticketing Platform
+  - SkuName: API Access / Ticket Service Charge
+  - ConsumedUnit: ticket_transaction
+
+meters:
+
+  - name: api_requests
+    description: >
+      API calls to api.seatedapp.io endpoints. No per-request charge is
+      documented for artist or management team API access. Enterprise
+      integrations may have volume terms defined in custom agreements.
+    unit: request
+    billingModel: free_or_custom
+    tiers:
+      - tier: Artist API Access
+        included: not_specified
+        overageRate: 0
+        overageCurrency: USD
+        notes: Free for artists with a Seated account
+      - tier: Enterprise / Custom Partnership
+        included: custom
+        overageRate: custom
+        notes: Terms defined in individual partnership agreements
+
+  - name: ticket_service_charge
+    description: >
+      A service charge is applied to each ticket transaction processed through
+      the Seated platform. The exact percentage or fixed-fee structure is not
+      publicly published. The Terms of Service state that ticket costs include
+      the event price plus a service charge payable to Seated. Fan credit
+      applied per transaction is capped at $10.
+    unit: transaction
+    billingModel: per_transaction
+    tiers:
+      - tier: Standard Ticket Sale
+        included: 0
+        overageRate: custom
+        overageCurrency: USD
+        notes: Service charge is applied per ticket sale; exact rate not publicly disclosed
+
+principles:
+
+  - name: Visibility
+    description: >
+      Seated does not publish a usage dashboard or API consumption metrics
+      for artist API access. Artists can monitor fan and event activity
+      through the Seated artist management interface.
+    controls:
+      - type: ArtistDashboard
+        url: https://www.seated.com/artists
+
+  - name: Optimization
+    recommendations:
+      - description: >
+          Use the single-line JavaScript embed for website tour date display
+          rather than custom API calls to reduce integration complexity and
+          avoid any risk of rate limit issues for simple use cases.
+      - description: >
+          Cache event listing responses locally when real-time freshness is
+          not required to avoid redundant API calls and reduce latency.
+      - description: >
+          Use the Seated integrations marketplace for fan data sync with
+          marketing tools rather than building custom data pipeline integrations
+          where a native connector already exists.
+      - description: >
+          Bundle merchandise and digital content into the ticket flow to
+          maximize per-transaction revenue without additional API overhead.
+
+source: https://support.seated.com/hc/en-us/articles/115006017267-Terms-Conditions
