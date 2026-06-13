@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "source": "https://blog.seated.com",
+    "fetched": "2026-06-13",
+    "provider": "seated"
+  },
+  "posts": [
+    {
+      "title": "We just bought back Seated",
+      "url": "https://blog.seated.com/we-just-bought-back-seated/",
+      "date": "2025-06-02",
+      "excerpt": "Co-founder David McKay announces that Seated is once again an independent, founder-led company after repurchasing it from Sofar Sounds four years post-acquisition."
+    },
+    {
+      "title": "Say hello to Seated's new integrations marketplace",
+      "url": "https://blog.seated.com/say-hello-to-seateds-new-integrations-marketplace/",
+      "date": "2024-08-14",
+      "excerpt": "Features new integrations enabling easier fan data capture and synchronization with popular marketing tools for artists."
+    },
+    {
+      "title": "Sofar Sounds acquires Seated to strengthen artist services",
+      "url": "https://blog.seated.com/sofar-sounds-acquires-seated/",
+      "date": "2021-02-12",
+      "excerpt": "Announces Sofar Sounds acquisition of Seated, fulfilling the founders vision of giving artists more control of their ticketing experience."
+    },
+    {
+      "title": "Our Year In Events 2020",
+      "url": "https://blog.seated.com/happy-new-year-from-seated/",
+      "date": "2021-01-04",
+      "excerpt": "Reflects on 2020 accomplishments, including 125+ live streams to 150,000+ ticket buyers."
+    },
+    {
+      "title": "9 things we learned from ticketing 90 live stream concerts (Part 2)",
+      "url": "https://blog.seated.com/9-things-we-learned-from-ticketing-90-live-stream-concerts-part-2/",
+      "date": "2020-11-17",
+      "excerpt": "Continuation of insights from producing over 90 live stream concerts."
+    },
+    {
+      "title": "9 things we learned from ticketing 90 live stream concerts (Part 1)",
+      "url": "https://blog.seated.com/9-things-we-learned-from-ticketing-90-live-stream-concerts-part-1/",
+      "date": "2020-11-02",
+      "excerpt": "Shares lessons from ticketing more than 90 high-quality live stream concerts."
+    },
+    {
+      "title": "Seated announces live stream referral partnership with 200+ independent venues and promoters",
+      "url": "https://blog.seated.com/live-stream-partnership/",
+      "date": "2020-10-02",
+      "excerpt": "Launches promoter affiliate network allowing venues to earn commissions on live stream ticket sales."
+    }
+  ]
+}

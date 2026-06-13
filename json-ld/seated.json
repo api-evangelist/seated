@@ -1,0 +1,37 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Seated",
+  "url": "https://www.seated.com/",
+  "description": "Seated is a live event discovery and direct ticketing platform that connects fans with artists through a frictionless ticketing experience. The platform enables artists to publish tour dates via a single embed line or a custom API integration, manage fan presales and waitlists, capture and sync fan data with marketing tools, and generate additional revenue through merchandise and digital content bundled into the ticket purchase flow.",
+  "sameAs": [
+    "https://blog.seated.com",
+    "https://go.seated.com",
+    "https://support.seated.com"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "url": "https://support.seated.com"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Seated Artist API",
+    "description": "The Seated Artist API enables developers and artist teams to build custom integrations with the Seated platform. The API provides access to tour date listings and event data, supporting use cases such as embedding event listings on artist websites, syncing fan notifications, and connecting with third-party marketing platforms.",
+    "url": "https://api.seatedapp.io"
+  },
+  "keywords": [
+    "live events",
+    "concerts",
+    "ticketing",
+    "artists",
+    "venues",
+    "tour dates",
+    "fan notifications",
+    "presales",
+    "music",
+    "entertainment"
+  ],
+  "termsOfService": "https://support.seated.com/hc/en-us/articles/115006017267-Terms-Conditions",
+  "privacyPolicy": "https://support.seated.com/hc/en-us/articles/115006196728-Privacy-Policy"
+}
