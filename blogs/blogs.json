@@ -47,5 +47,17 @@
       "date": "2020-10-02",
       "excerpt": "Launches promoter affiliate network allowing venues to earn commissions on live stream ticket sales."
     }
-  ]
+  ],
+  "repo": "seated",
+  "feeds": [
+    {
+      "source": "https://support.seated.com/hc/en-us/articles/115006196728-Privacy-Policy",
+      "feed_url": "https://support.seated.com/hc/en-us/articles/115006196728-Privacy-Policy",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-14T20:42:17Z"
 }
