@@ -68,6 +68,8 @@ apis:
 
 common:
 
+  - type: DomainSecurity
+    url: security/seated-domain-security.yml
   - type: Website
     url: https://www.seated.com/
 
