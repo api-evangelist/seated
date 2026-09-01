@@ -38,16 +38,16 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/seated.png
 tags:
-  - live events
-  - concerts
+  - Live Events
+  - Concerts
   - Ticketing
-  - artists
-  - venues
+  - Artists
+  - Venues
   - tour dates
   - fan notifications
   - Presales
-  - music
-  - entertainment
+  - Music
+  - Entertainment
 tags_raw:
   - live events
   - concerts
@@ -83,7 +83,7 @@ apis:
     humanURL: https://www.seated.com/artists
     baseURL: https://api.seatedapp.io
     tags:
-      - artists
+      - Artists
       - tour dates
       - Event
       - Tickets
