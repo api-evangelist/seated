@@ -86,7 +86,7 @@ apis:
       - Artists
       - tour dates
       - Event
-      - Tickets
+      - Ticketing
       - fan data
       - Presales
       - REST
@@ -98,6 +98,7 @@ apis:
       - fan data
       - presales
       - REST
+      - Tickets
     properties:
       - type: Documentation
         url: https://support.seated.com
