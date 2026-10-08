@@ -88,3 +88,28 @@ notes: >
   www.seated.com/artists. Custom or enterprise integrations require
   direct engagement with the Seated team. Pricing information sourced
   from public website and documentation as of 2026-06-13.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - negotiated
+  units: []
+  plans:
+  - name: Artist Account (Free Embed)
+    access: free
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Artist API Access
+    access: free
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Enterprise / Custom Partnership
+    access: enterprise
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
