@@ -64,20 +64,106 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Seated is a live event discovery and direct ticketing platform that connects fans with artists through a frictionless ticketing experience. Artists can publish tour dates via a single embed line or a custom API integration, manage fan presales and waitlists, capture and sync fan data with marketing tools, and generate additional revenue through merchandise and digital content bundled into the ticket purchase flow.
+Seated is a live event discovery and direct ticketing platform that connects fans with artists through a frictionless ticketing experience. The platform enables artists to publish tour dates via a single embed line or a custom API integration, manage fan presales and waitlists, capture and sync fan data with marketing tools, and generate additional revenue through merchandise and digital content bundled into the ticket purchase flow. Fans can follow favorite artists to receive text or notification alerts for nearby shows, purchase tickets via mobile without downloading an app, and access live event information for music and entertainment. Seated serves independent artists and major touring acts including Noah Kahan, Shawn Mendes, Brandi Carlile, Post Malone, and Billie Eilish, operating as an independent founder-led company focused on direct artist-to-fan ticketing.
 
-**Website:** https://www.seated.com/
-**Artist Platform:** https://www.seated.com/artists
-**Support:** https://support.seated.com
-**Blog:** https://blog.seated.com
+**Areas:** Live Events · Concerts · Ticketing · Artists · Venues · tour dates · fan notifications · Presales · Music · Entertainment
 
-## APIs
+## Seated on APIs.io
 
-- **Seated Artist API** - Programmatic access to tour dates, event listings, fan data, and presale management at api.seatedapp.io
+Everything profiled for Seated is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/seated/](https://apis.io/providers/seated/)** — or go straight to one of the APIs or properties below.
 
-## Resources
+### APIs (1)
 
-- [Plans & Pricing](plans/seated-plans-pricing.yml)
-- [Rate Limits](rate-limits/seated-rate-limits.yml)
-- [FinOps](finops/seated-finops.yml)
-- [APIs.json](apis.yml)
+- [Seated Artist API](https://apis.io/apis/seated/artist-api/) — The Seated Artist API enables developers and artist teams to build custom integrations with the Seated platform. The API provides access to tour date…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Seated Domain Security](https://apis.io/security/seated/seated-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Seated Plans Pricing](https://apis.io/plans/seated/seated-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Seated Rate Limits](https://apis.io/rate-limits/seated/seated-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Seated Finops](https://apis.io/finops/seated/seated-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.seated.com/)
+- [Documentation](https://support.seated.com)
+- [Getting started](https://www.seated.com/artists)
+- [Blog](https://blog.seated.com)
+- [Terms of service](https://support.seated.com/hc/en-us/articles/115006017267-Terms-Conditions)
+- [Privacy policy](https://support.seated.com/hc/en-us/articles/115006196728-Privacy-Policy)
+
+## API Evangelist rating
+
+**Kin Score 20.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 35.7 |
+| Access clarity | 28.9 |
+
+**Agent readiness 3.1** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 19.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/seated/](https://apis.io/providers/seated/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Seated: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/seated/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
